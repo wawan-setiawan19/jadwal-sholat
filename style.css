@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Karantina', cursive;
+}
+
+.jam-container{
+  overflow: auto;
+}
+
+.jam-container::after{
+  content: '';
+  clear: both;
+}
+
+.timer {
+  width: 50vw;
+  height: 100vh;
+  background-color: rgb(3, 123, 128);
+  border-radius: 0 20px 20px 0;
+  color: white;
+  position: relative;
+  float: left;
+}
+
+.analog-clock {
+  margin-right: 10px;
+  float: right;
+  position: relative;
+  width: calc(50vw - 30px);
+  height: calc(50vw - 30px);
+  border: 20px solid teal;
+  border-radius: 50%;
+}
+
+.jarum-detik,
+.jarum-menit,
+.jarum-jam {
+  width: 20px;
+  height: 20px;
+  background-color: black;
+  position: absolute;
+  border-radius: 50%;
+  left: 50%;
+  top: 50%;
+  transform: rotate(0deg);
+}
+
+.jarum-detik::after,
+.jarum-menit::after,
+.jarum-jam::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+}
+
+.jarum-detik::after {
+  width: 45vh;
+  height: 20px;
+  background-color: teal;
+}
+
+.jarum-menit::after {
+  width: 40vh;
+  height: 20px;
+  background-color: #faab36;
+}
+
+.jarum-jam::after {
+  width: 30vh;
+  height: 20px;
+  background-color: #fd5901;
+}
+
+.timer h1 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 90px;
+}
+
+.angka{
+  font-size: 60px;
+  position: absolute;
+  color: teal;
+}
+
+.angka-12, .angka-6{
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.angka-3, .angka-9{
+  top: 50%;
+}
+
+.angka-12{
+  top: 0;
+}
+
+.angka-3{
+  right: 0;
+  transform: translate(-50%, -50%);
+}
+
+.angka-6{
+  bottom: 0;
+}
+
+.angka-9{
+  transform: translate(50%, -50%);
+}
+
+.jadwal-sholat{
+  padding-top: 20px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.jadwal-sholat-container{
+  margin-left: auto;
+  margin-right: auto;
+  height: 80vh;
+  width: 90%;
+  position: relative;
+  border-radius: 40px;
+  text-align: center;
+  color: white;
+}
+
+.jadwal-sholat h1{
+  font-size: 60px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.imsak, .shubuh,.dzuhur,.ashar,.magrib,.isya{
+  width: calc(33.33% - 30px);
+  height: 250px;
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 20px;
+  padding-top: 20px;
+}
+
+.imsak{
+  background-color: #005f60;
+}
+
+.shubuh{
+  background-color: #008083;
+}
+
+.dzuhur{
+  background-color: #faab36;
+}
+
+.ashar{
+  background-color: #faab36;
+}
+
+.magrib{
+  background-color: #005f60;
+}
+
+.isya{
+  background-color: #008083;
+}
+
+.jadwal-sholat h2{
+  font-size: 48px;
+}
+
+.waktu{
+  font-size: 90px;
+}
+
+.tanggal{
+  text-align: center;
+  font-size: 24px;
+}
