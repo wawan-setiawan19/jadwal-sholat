@@ -24,6 +24,18 @@
   float: left;
 }
 
+@media screen and (max-width : 400px) {
+  .timer{
+    width: 100%;
+    height: 50vh;
+    border-radius: 0;
+  }
+
+  .analog-clock{
+    display: none;
+  }
+}
+
 .analog-clock {
   margin-right: 10px;
   float: right;
@@ -143,6 +155,19 @@
   margin-top: 20px;
   margin-left: 20px;
   padding-top: 20px;
+}
+
+@media screen and (max-width:400px) {
+ .imsak,
+ .shubuh,
+ .dzuhur,
+ .ashar,
+ .magrib,
+ .isya {
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+ }
 }
 
 .imsak{
